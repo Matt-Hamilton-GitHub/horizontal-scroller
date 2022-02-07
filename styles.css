@@ -17,7 +17,7 @@
 .media-element > img{
     object-fit: cover;
     inline-size:100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 19/ 15;
     
 }
 
@@ -28,6 +28,16 @@ grid-template-rows:min-content;
 padding: var(--spacer);
 background: var(--surface-2);
 border-radius: var(--radius-2);
+box-shadow: var(--shadow-2);
+}
+
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--sapcer, 1rem);
+}
+
+.snaps-inline > * {
+scroll-snap-align:end;
 }
 
 
